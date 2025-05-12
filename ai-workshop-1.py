@@ -39,9 +39,12 @@ if data:
 else:
     print("❌ Unable to load JSON data.")
 
+<<<<<<< HEAD
 #link https://github.com/agentmorris/MegaDetector/blob/main/megadetector/data_management/README.md#coco-camera-traps-format
 
 
+=======
+>>>>>>> 1c746a5aefbbab9cc12d192e1d761f03b78bcfeb
 
 # %% number of images per category
 from collections import defaultdict
@@ -68,6 +71,7 @@ else:
     print("❌ Unable to process data due to errors.")
 
 
+<<<<<<< HEAD
 # %% visualize number of images per category
 import matplotlib.pyplot as plt
 from collections import defaultdict
@@ -106,6 +110,8 @@ if data and "categories" in data and "annotations" in data:
 else:
     print("❌ 'categories' or 'annotations' key is missing in the data.")
 
+=======
+>>>>>>> 1c746a5aefbbab9cc12d192e1d761f03b78bcfeb
 # %% unique locations (based on image folder?)
 if data:
     # Create a set to store unique locations
@@ -121,6 +127,7 @@ if data:
 else:
     print("❌ Unable to process data due to errors.")
 
+<<<<<<< HEAD
 
 
 # %% pick 10 random images and test labels manually - could do a grid of imaages in order to viusally see label
@@ -216,3 +223,6 @@ else:
     print("❌ 'images' or 'annotations' key is missing in the data.")
 
 # %% categories - experiment desing not right or wrong but your designing experiment. train calssifier to skunks vs everything else here is list of categories pick skunk and then set everything esle to not skunnk. cla
+=======
+# %%
+>>>>>>> 1c746a5aefbbab9cc12d192e1d761f03b78bcfeb
