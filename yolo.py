@@ -30,9 +30,28 @@ metrics.top5
 #training and test dataset 
 #visualize what its doing well on 
 
+from ultralytics import YOLO
+
+# Load a model
+model = YOLO("/home/Leiphardt/Desktop/ai-workshop/ai-workshop/runs/classify/train/weights/best.pt") 
+
+# Predict with the model
+results = model("/home/Leiphardt/Desktop/ai-workshop/split-dataset/val/bird/FCM1__2019-08-18__12-16-49(9).JPG", save_txt = True)  
+ # predict on an image and/or folder
+
 
 
 
 
 
 # %%
+print(results)
+
+#https://scikit-learn.org/stable/modules/generated/sklearn.metrics.classification_report.html
+
+# %%
+#per class accuracy
+#macro (class) accuracy and average across those values 
+#CV lecture on evaluation  metrics!
+# off line evaluation
+# 

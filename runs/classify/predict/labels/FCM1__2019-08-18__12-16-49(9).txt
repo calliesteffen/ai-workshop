@@ -1,0 +1,2 @@
+0.80 bird
+0.20 nonbird
